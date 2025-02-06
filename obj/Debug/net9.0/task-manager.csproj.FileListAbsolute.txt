@@ -1,0 +1,15 @@
+/Users/jonanleu/repos/task-manager/bin/Debug/net9.0/task-manager
+/Users/jonanleu/repos/task-manager/bin/Debug/net9.0/task-manager.deps.json
+/Users/jonanleu/repos/task-manager/bin/Debug/net9.0/task-manager.runtimeconfig.json
+/Users/jonanleu/repos/task-manager/bin/Debug/net9.0/task-manager.dll
+/Users/jonanleu/repos/task-manager/bin/Debug/net9.0/task-manager.pdb
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.AssemblyInfoInputs.cache
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.AssemblyInfo.cs
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.csproj.CoreCompileInputs.cache
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.sourcelink.json
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.dll
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/refint/task-manager.dll
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.pdb
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.genruntimeconfig.cache
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/ref/task-manager.dll
