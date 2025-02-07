@@ -12,10 +12,4 @@ public class Task
     Details = details;
     IsCompleted = false;
   }
-
-      public override string ToString()
-    {
-        return $"Title: \"{Title}\" -- {Details} \n";
-    }
-
 }

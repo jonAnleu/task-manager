@@ -1,6 +1,15 @@
+using System.Linq.Expressions;
+using Newtonsoft.Json;
+
 class TaskManager
 {
+  private const string FilePath = "tasks.json";
   public List<Task> tasks = new();
+
+  public TaskManager()
+  {
+    LoadTasks();
+  }
 
   public void Run()
   {
@@ -30,16 +39,18 @@ class TaskManager
             DisplayTasks();
             break;
           case 4:
+            SaveTasks();
             Console.WriteLine("\nGoodbye!\n");
             return;
           default:
             Console.Clear();
             Console.WriteLine("\"INVALID ENTRY\" Please enter a number that corresponds to the menu options.");
             break;
+
         }
       }
       else
-      { 
+      {
         Console.Clear();
         Console.WriteLine("\"INVALID ENTRY\" Please enter a number that corresponds to the menu options.");
       }
@@ -58,8 +69,11 @@ class TaskManager
     string title = Console.ReadLine();
     Console.Write("Details: ");
     string details = Console.ReadLine();
+
     tasks.Add(new Task(category, title, details));
-    Console.WriteLine("\nTASK ADDED");
+    SaveTasks();
+
+    Console.WriteLine("\nTASK ADDED!");
   }
 
   public void EditTask()
@@ -85,4 +99,33 @@ class TaskManager
       }
     }
   }
-}
+
+  private void SaveTasks()
+  {
+    try
+    {
+      string json = JsonConvert.SerializeObject(tasks, Formatting.Indented);
+      File.WriteAllText(FilePath, json);
+    }
+    catch (Exception ex)
+    {
+      Console.WriteLine($"Error saving tasks: {ex.Message}");
+    }
+  }
+
+  private void LoadTasks()
+  {
+    try
+    {
+      if (File.Exists(FilePath))
+      {
+        string json = File.ReadAllText(FilePath);
+        tasks = JsonConvert.DeserializeObject<List<Task>>(json) ?? new List<Task>();
+      }
+    }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Error loading tasks: {ex.Message}");
+      }
+    }
+  }

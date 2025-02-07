@@ -13,3 +13,6 @@
 /Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.pdb
 /Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.genruntimeconfig.cache
 /Users/jonanleu/repos/task-manager/obj/Debug/net9.0/ref/task-manager.dll
+/Users/jonanleu/repos/task-manager/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-manager.csproj.AssemblyReference.cache
+/Users/jonanleu/repos/task-manager/obj/Debug/net9.0/task-man.EDDC1717.Up2Date
